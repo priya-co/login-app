@@ -1,0 +1,13 @@
+.todo-list {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.todo-list.checked {
+    text-decoration: line-through;
+}
+
+.cross {
+    font-size: 20px;
+}
