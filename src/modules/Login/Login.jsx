@@ -46,8 +46,12 @@ export default function Login() {
     setPassword(val);
   };
   return (
-    <div>
-      {isError ? <span>Please check credentials</span> : null}
+    <div className='login-wrapper'>
+      {isError ? (
+        <span className='red login-label'>Please check credentials</span>
+      ) : (
+        <span className='login-label'>Please enter credentials</span>
+      )}
       <input
         type='text'
         placeholder='user name'
@@ -60,7 +64,9 @@ export default function Login() {
         value={password}
         onChange={(e) => handleChange(e, "password")}
       />
-      <button onClick={handleSubmit}>Login</button>
+      <button onClick={handleSubmit} className='login-button'>
+        Login
+      </button>
     </div>
   );
 }
