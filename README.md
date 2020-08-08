@@ -1,16 +1,6 @@
-props.todoLists.map((list) => (
-    <div>
-        <div className="label">{list.label}</div>
-    </div>
-))
+### What?
+A simple login app
 
-
-props.todoLists.map((list) => {
-    // statements
-    return <div>
-
-    </div>
-})
-
-
-props.todoLists.map((list) => ());
+#### Tech stack
+- React hooks
+- Redux hooks
